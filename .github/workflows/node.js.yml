@@ -39,7 +39,7 @@ jobs:
         username: 'root'
         server: '${{ secrets.SERVER_HOST }}'
         password: '${{ secrets.SERVER_PWD }}'
-        local_path: '/public/*'
+        local_path: './public/*'
         remote_path: '/root/blog'
         args: "-o ConnectTimeout=5"
     - run: echo '发布成功'
