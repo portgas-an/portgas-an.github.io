@@ -33,10 +33,11 @@ jobs:
     - name: 构建
       run: npm run -script build
     - name: 发布腾讯云
-      uses: wangyucode/sftp-upload-action@v1.4.5 # 使用 FTP 协议上传到腾讯云
+      uses: wlixcc/SFTP-Deploy-Action@v1.0  # 使用 FTP 协议上传到腾讯云
       with:
         username: 'root'
         host: '${{ secrets.SERVER_HOST }}'
         password: '${{ secrets.SERVER_PWD }}'
-        localDir: 'public'
+        local_path: './public/*'
         remoteDir: '/etc/nginx/www/blog'
+        delete_remote_files: true
