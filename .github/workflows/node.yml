@@ -39,5 +39,5 @@ jobs:
         server: '${{ secrets.SERVER_HOST }}'
         password: '${{ secrets.SERVER_PWD }}'
         local_path: './public/*'
-        remote_path: '/etc/nginx/www/blog'
+        remote_path: '/usr/share/nginx/blog'
         delete_remote_files: true
