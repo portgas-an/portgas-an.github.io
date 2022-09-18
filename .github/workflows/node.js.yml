@@ -41,4 +41,3 @@ jobs:
         local-dir: './public/'
         server-dir: '/root/blog/'
         protocol: ftps
-        port: '${{ secrets.SERVER_PORT }}'
