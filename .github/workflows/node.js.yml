@@ -32,14 +32,13 @@ jobs:
       run: npm install
     - name: 构建
       run: npm run -script build
-    - run: echo '开始发布'
     - name: 发布腾讯云
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4 # 使用 SFTP 协议上传到腾讯云
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2 # 使用 FTP 协议上传到腾讯云
       with:
         username: 'root'
         server: '${{ secrets.SERVER_HOST }}'
         password: '${{ secrets.SERVER_PWD }}'
-        local_path: './public/*'
-        remote_path: '/root/blog'
-        args: "-o ConnectTimeout=5"
-    - run: echo '发布成功'
+        local-dir: './public/'
+        server-dir: '/root/blog/'
+        protocol: ftps
+        port: '${{ secrets.SERVER_PORT }}'
