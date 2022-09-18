@@ -39,4 +39,4 @@ jobs:
         host: '${{ secrets.SERVER_HOST }}'
         password: '${{ secrets.SERVER_PWD }}'
         localDir: './public/'
-        remoteDir: '/root/blog/'
+        remoteDir: '/etc/nginx/www/blog'
