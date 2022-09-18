@@ -30,10 +30,8 @@ jobs:
       run: npm ci
     - name: 安装node依赖
       run: npm install
-      working-directory: blog-client
     - name: 构建
       run: npm run -script build
-      working-directory: blog-client
     - run: echo '开始发布'
     - name: 发布腾讯云
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4 # 使用 SFTP 协议上传到腾讯云
@@ -42,7 +40,7 @@ jobs:
         server: '${{ secrets.SERVER_HOST }}'
         password: '${{ secrets.SERVER_PWD }}'
         port: '${{ secrets.SERVER_PORT }}'
-        local_path: 'blog-client/public/*'
+        local_path: '/public/*'
         remote_path: '/root/blog'
         args: "-o ConnectTimeout=5"
     - run: echo '发布成功'
