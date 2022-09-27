@@ -446,7 +446,7 @@ footer:
   beian:
     enable: true
     # ICP证号
-    icp_text: 粤ICP备2022117970号-1
+    icp_text: 粤ICP备2022117970号
     # 公安备案号，不填则只显示ICP
     police_text: 京公网安备12345678号
     # 公安备案的编号，用于URL跳转查询
