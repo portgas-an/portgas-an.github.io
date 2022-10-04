@@ -450,7 +450,7 @@ footer:
     # 公安备案号，不填则只显示ICP
     police_text: 粤公网安备44030602007130号
     # 公安备案的编号，用于URL跳转查询
-    police_code: 12345678
+    police_code: 44030602007130
     # 公安备案的图片. 为空时不显示备案图片
     police_icon: /img/police_beian.png
 
