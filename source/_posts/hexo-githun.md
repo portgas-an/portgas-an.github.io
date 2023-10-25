@@ -11,7 +11,7 @@ Github仓库一枚。仓库的名称必须为<你的 GitHub 用户名>.github.io
 
 ### 部署Github Pages
 可以直接clone我的另外一个初始化好的项目[public_blog](https://github.com/portgas-an/public_blog)，拉下来之后项目目录如下:
-
+```
 ├── _config.yml hexo配置文件
 ├── source
 │   ├── _posts 文章存放的页面，后面写的文章都是放到这个目录下
@@ -19,6 +19,7 @@ Github仓库一枚。仓库的名称必须为<你的 GitHub 用户名>.github.io
 └── themes 可以自己去搜索一下怎么配置主题
 └── scaffolds 不用动
 └── package.json 不用动
+```
 下载好之后可以直接push到你的仓库，然后在仓库的setting->Pages->Souce下选择Github Actions，接着点Static HTML的Configure,修改名称为pages.yml,把下面的代码复制进去。
 ```
 name: Pages
