@@ -1,5 +1,10 @@
 ---
 title: CentOs7配置Nginx的SSl
+categories: 
+- hexo相关
+tags:
+- 博客
+- hexo折腾
 ---
 
 

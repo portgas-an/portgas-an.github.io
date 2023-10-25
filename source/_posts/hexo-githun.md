@@ -1,5 +1,10 @@
 ---
 title: GithubPage部署
+categories: 
+- hexo相关
+tags:
+- 博客
+- hexo折腾
 ---
 
 本文章适用GitHub Page部署，由于之前部署在自己的服务器上面作为博客，后来没了新人优惠后服务器的成本太够，就把博客部署到GitHub上面，反正看得到的人都应该会访问GitHub。
